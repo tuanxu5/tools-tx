@@ -7,7 +7,7 @@ import Projects from "./pages/Projects";
 import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
 import Users from "./pages/Users";
-git init
+
 export default function App() {
   return (
     <BrowserRouter>

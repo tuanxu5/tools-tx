@@ -28,24 +28,24 @@ export default function Dashboard() {
   return (
     <DashboardLayout title="Trang chủ">
       {/* Stats Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
         {stats.map((stat, index) => (
           <StatCard key={index} {...stat} />
         ))}
       </div>
 
       {/* Charts Row */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
-        <div className="lg:col-span-2">
-          <ChartPlaceholder title="Doanh thu theo tháng" height="h-72" />
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 mb-6">
+        <div className="xl:col-span-2">
+          <ChartPlaceholder title="Doanh thu theo tháng" height="h-64 lg:h-72" />
         </div>
-        <ChartPlaceholder title="Phân bố người dùng" height="h-72" />
+        <ChartPlaceholder title="Phân bố người dùng" height="h-64 lg:h-72" />
       </div>
 
       {/* Bottom Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Recent Activities */}
-        <div className="bg-white rounded-xl p-5 border border-slate-100">
+        <div className="bg-white rounded-xl p-4 lg:p-5 border border-slate-100">
           <h3 className="text-base font-semibold text-slate-800 mb-4">Hoạt động gần đây</h3>
           <div className="space-y-3">
             {recentActivities.map((activity) => (
@@ -67,7 +67,7 @@ export default function Dashboard() {
         </div>
 
         {/* Top Projects */}
-        <div className="bg-white rounded-xl p-5 border border-slate-100">
+        <div className="bg-white rounded-xl p-4 lg:p-5 border border-slate-100">
           <h3 className="text-base font-semibold text-slate-800 mb-4">Top Projects</h3>
           <div className="space-y-4">
             {topProjects.map((project, index) => (
