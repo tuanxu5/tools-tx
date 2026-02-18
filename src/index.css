@@ -1,10 +1,8 @@
-@import "tailwindcss";
-
 @theme {
   /* Primary colors */
 
   /* Font family */
-  --font-sans: 'Be Vietnam Pro', sans-serif;
+  --font-sans: "Be Vietnam Pro", sans-serif;
 }
 
 * {
